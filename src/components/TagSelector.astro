@@ -21,7 +21,11 @@ const tags = await getAllTags();
   >
     {
       tags.map((tag) => (
-        <a href={`/blog/tag/${tag.toLowerCase()}`}>
+        <a
+          href={`/blog/tag/${tag.toLowerCase()}`}
+          target="_parent"
+          rel="noopener noreferrer"
+        >
           <span class="border-extra-soft-white mt-4 self-start rounded border px-2 py-1 text-zinc-400">
             {tag}
           </span>
