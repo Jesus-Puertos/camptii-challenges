@@ -1,0 +1,101 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<h2
+  class="text-purple-800 dark:text-yellow-200 text-4xl text-center text-balance uppercase font-bold"
+>
+  Explora las categorías.
+</h2>
+
+<section
+  class={`
+    w-full max-w-[1250px] mt-8
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+>
+  <BentoItem class="col-span-10 md:col-span-4" title="Principiante" subtitle="">
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-black-950
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/blog-placeholder-1.jpg')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para quienes no buscan retos muy complicados o están iniciándose en
+      el mundo de la programación.
+    </p>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-6" title="Intermedio" subtitle="">
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/blog-placeholder-2.jpg')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para quienes buscan retos más desafiantes y desean poner a prueba
+      sus conocimientos.
+    </p>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-6" title="Difícil" subtitle="">
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/blog-placeholder-1.jpg')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para aquellos que están completamente inmersos en el mundo de la
+      programación.
+    </p>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-4" title="En equipo" subtitle="">
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/blog-placeholder-2.jpg')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para quienes buscan trabajar en equipo y aprender de otros
+      desarrolladores.
+    </p>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-10"
+    title="Stacks específicos"
+    subtitle=""
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/blog-placeholder-2.jpg')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para quienes buscan trabajar con tecnologías específicas y
+      especializarse en un área en particular.
+    </p>
+  </BentoItem>
+</section>

@@ -1,0 +1,28 @@
+---
+import GitHubIcon from "@/icons/GitHubIcon.astro";
+import FacebookIcon from "@/icons/FacebookIcon.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+---
+
+<nav class="flex justify-center items-center gap-5 mt-8">
+  <a
+    href=""
+    target="_blank"
+    rel="noopener noreferrer"
+    class="dark:hover:text-yellow-400 unset flex justify-center items-center gap-x-1 rounded-sm ease-in-out bg-left-bottom bg-[length:0%_55%] hover:bg-[length:100%_55%] border-b-2 border-transparent to-yellow-200 hover:border-current transition text-center hover:scale-105"
+  >
+    <GitHubIcon class="size-8 text-black dark:text-white" />
+    <span class="text-black dark:text-white">Github</span>
+  </a>
+  <a
+    href=""
+    target="_blank"
+    rel="noopener noreferrer"
+    class="dark:hover:text-blue-400 unset flex justify-center items-center gap-x-1 rounded-sm ease-in-out bg-left-bottom bg-[length:0%_55%] hover:bg-[length:100%_55%] border-b-2 border-transparent to-blue-200 hover:border-current transition text-center hover:scale-105"
+  >
+    <FacebookIcon class="size-8 text-black" />
+    <span class="text-black dark:text-white">Facebook</span>
+  </a>
+
+  <ThemeToggle />
+</nav>
