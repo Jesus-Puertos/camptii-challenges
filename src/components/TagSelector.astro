@@ -4,15 +4,21 @@ import { Icon } from "astro-icon/components";
 const tags = await getAllTags();
 ---
 
-<div class="flex gap-4">
+<div class="flex justify-center items-center gap-4">
   <span
     id="opener"
-    class="size-12 rounded-full grid place-items-center border border-zinc-700 cursor-pointer"
+    class="size-12 grid place-items-center md:mt-2 cursor-pointer"
   >
-    <Icon class="text-white text-3xl" name="lucide:list-filter" />
+    <Icon
+      class="text-blue-400 dark:text-white text-3xl"
+      name="lucide:list-filter"
+    />
   </span>
 
-  <div id="selector" class="opacity-0 transition-opacity">
+  <div
+    id="selector"
+    class="opacity-0 transition-opacity flex flex-wrap justify-center items-center gap-4"
+  >
     {
       tags.map((tag) => (
         <a href={`/blog/tag/${tag.toLowerCase()}`}>

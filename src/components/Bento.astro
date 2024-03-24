@@ -1,5 +1,6 @@
 ---
 import BentoItem from "./BentoItem.astro";
+import BoxArrowIcon from "@/icons/BoxArrow.astro";
 ---
 
 <h2
@@ -10,7 +11,7 @@ import BentoItem from "./BentoItem.astro";
 
 <section
   class={`
-    w-full max-w-[1250px] mt-8
+    w-full max-w-[1250px] mt-0
     grid lg:grid-cols-10 auto-rows-[30rem] gap-4
     mx-auto p-6 md:p-12 lg:p-20
   `}
@@ -29,6 +30,21 @@ import BentoItem from "./BentoItem.astro";
       Ideal para quienes no buscan retos muy complicados o están iniciándose en
       el mundo de la programación.
     </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos para principiantes</span>
+        </a>
+      </span>
+    </div>
   </BentoItem>
 
   <BentoItem class="col-span-10 md:col-span-6" title="Intermedio" subtitle="">
@@ -45,6 +61,21 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       Ideal para quienes buscan retos más desafiantes y desean poner a prueba
       sus conocimientos.
     </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos para intermedios</span>
+        </a>
+      </span>
+    </div>
   </BentoItem>
 
   <BentoItem class="col-span-10 md:col-span-6" title="Difícil" subtitle="">
@@ -61,6 +92,21 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       Ideal para aquellos que están completamente inmersos en el mundo de la
       programación.
     </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos para expertos</span>
+        </a>
+      </span>
+    </div>
   </BentoItem>
 
   <BentoItem class="col-span-10 md:col-span-4" title="En equipo" subtitle="">
@@ -77,6 +123,21 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       Ideal para quienes buscan trabajar en equipo y aprender de otros
       desarrolladores.
     </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos para trabajo en equipo</span>
+        </a>
+      </span>
+    </div>
   </BentoItem>
 
   <BentoItem
@@ -97,5 +158,20 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       Ideal para quienes buscan trabajar con tecnologías específicas y
       especializarse en un área en particular.
     </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href=`/blog`
+          target="_parent"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos de stacks específicos</span>
+        </a>
+      </span>
+    </div>
   </BentoItem>
 </section>
