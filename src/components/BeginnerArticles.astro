@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 type Props = CollectionEntry<"beginner">["data"] & { slug: string };
-const { heroImage, title, tags, pubDate, slug, illustration } = Astro.props;
+const { title, pubDate, slug, illustration } = Astro.props;
 import FormattedDate from "@/components/FormattedDate.astro";
 ---
 
