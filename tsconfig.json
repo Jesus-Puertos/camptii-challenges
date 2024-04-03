@@ -1,13 +1,14 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "C:/Users/226w0/dev/curso-astro-avanzado",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
-  }
+    }
+  },
+  "exclude": [
+    "public"
+  ]
 }
