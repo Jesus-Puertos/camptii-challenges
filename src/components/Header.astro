@@ -1,7 +1,13 @@
 ---
+import { getSession } from "auth-astro/server";
+
 import GitHubIcon from "@/icons/GitHubIcon.astro";
 import FacebookIcon from "@/icons/FacebookIcon.astro";
 import ThemeToggle from "./ThemeToggle.astro";
+import ProfilePicture from "@/components/ProfilePicture.astro";
+import Action from "./Action.astro";
+
+const session = await getSession(Astro.request);
 ---
 
 <nav class="flex justify-center items-center gap-5 mt-8">
@@ -25,4 +31,19 @@ import ThemeToggle from "./ThemeToggle.astro";
   </a>
 
   <ThemeToggle />
+
+  {
+    session !== null ? (
+      <ProfilePicture />
+    ) : (
+      <Action
+        id="login"
+        class="w-full h-8 px-0 py-0 ml-2 text-base"
+        as="button"
+        aria-label="Iniciar Sesion"
+      >
+        Iniciar Sesión
+      </Action>
+    )
+  }
 </nav>

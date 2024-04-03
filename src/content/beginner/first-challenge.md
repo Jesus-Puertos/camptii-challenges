@@ -2,7 +2,8 @@
 title: "Primer reto de programación"
 pubDate: "Mar 18 2024"
 heroImage: "/blog-placeholder-1.jpg"
-tags: ["programación", "desafío", "números pares"]
+tags: [""]
+illustration: '/ilustrations/5.png'
 ---
 
 ## Suma de números pares

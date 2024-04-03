@@ -1,41 +1,10 @@
 ---
-import Header from "@/components/Header.astro";
+import { getSession } from "auth-astro/server";
+import Intro from "@/components/Home/Intro.astro";
+import LogedIn from "@/components/Home/LogedIn.astro";
+
+const session = await getSession(Astro.request);
+console.log(session);
 ---
 
-<section class="py-4 max-w-3xl mx-auto px-6 sm:px-8">
-  <Header />
-  <header class="my-12 block">
-    <h1
-      class="font-bold text-[#3E3355] dark:text-white text-text-heading text-center text-4xl md:text-5xl pt-4 pb-4 overflow-hidden"
-    >
-      <span
-        class="bg-gradient-to-bl bg-no-repeat bg-bottom bg-[length:90%_40%]
-  from-[#8AE6FB] to-[#8AE6FB] dark:from-[#8AE6FB]/20 dark:to-blue-600/70
-  [text-wrap:balance]"
-      >
-        <span class="dark:text-yellow-200">Pruebas de Programación</span>
-        <br />
-        Camptii V5.0</span
-      >
-    </h1>
-
-    <p
-      class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed mt-6"
-    >
-      <strong>Pon en práctica</strong> tus habilidades de programación con estos
-      ejercicios que van desde lo más básico hasta lo más avanzado. Demuestra que
-      puedes resolverlos y, sobre todo, diviértete.
-    </p>
-    <p
-      class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed"
-    >
-      Utiliza el lenguaje de programación que prefieras. Al final, recibirás
-      retroalimentación sobre tu solución. Gracias por ser parte de esta
-      comunidad estudiantil del Instituto Tecnológico Superior de Zongolica.
-
-      <span class="text-[#3e3355] dark:text-yellow-200 font-bold"
-        >¡Buena suerte!</span
-      >
-    </p>
-  </header>
-</section>
+{session === null ? <Intro /> : <LogedIn />}

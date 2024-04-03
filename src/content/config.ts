@@ -18,6 +18,7 @@ const beginner = defineCollection({
         title: z.string(),
         pubDate: z.coerce.date(),
         tags: z.string().array(),
+        illustration: z.string(),
     })
 });
 
