@@ -14,7 +14,7 @@ import Action from "../Action.astro";
   from-[#8AE6FB] to-[#8AE6FB] dark:from-[#8AE6FB]/20 dark:to-blue-600/70
   [text-wrap:balance]"
       >
-        <span class="dark:text-yellow-200">Pruebas de Programación</span>
+        <span class="dark:text-yellow-200">Desafíos de Programación</span>
         <br />
         Camptii V5.0</span
       >
@@ -23,19 +23,20 @@ import Action from "../Action.astro";
     <p
       class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed mt-6"
     >
-      <strong>Pon en práctica</strong> tus habilidades de programación con estos
-      ejercicios que van desde lo más básico hasta lo más avanzado. Demuestra que
-      puedes resolverlos y, sobre todo, diviértete.
+      <strong>Aplica</strong> tus habilidades de programación con estos desafíos
+      que abarcan desde lo más elemental hasta lo más complejo. Demuestra tu capacidad
+      para resolverlos y, sobre todo, disfruta el proceso.
     </p>
     <p
       class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed"
     >
-      Utiliza el lenguaje de programación que prefieras. Al final, recibirás
-      retroalimentación sobre tu solución. Gracias por ser parte de esta
-      comunidad estudiantil del Instituto Tecnológico Superior de Zongolica.
+      Elige el lenguaje de programación que más te guste. Al finalizar,
+      recibirás comentarios sobre tu solución. Agradecemos tu participación en
+      la comunidad estudiantil del Instituto Tecnológico Superior de Zongolica.
+      Además, te invitamos a votar por los proyectos de la comunidad.
 
       <span class="text-[#3e3355] dark:text-yellow-200 font-bold"
-        >¡Buena suerte!</span
+        >¡Éxito en tu desafío!</span
       >
     </p>
     <Action
@@ -44,8 +45,10 @@ import Action from "../Action.astro";
       as="button"
       aria-label="Iniciar Sesion"
     >
-      Iniciar Sesión
+      Inicia sesión para votar
     </Action>
+    <small class="mt-2">Para participar, necesitarás una cuenta de GitHub</small
+    >
   </header>
 </section>
 
@@ -57,7 +60,7 @@ import Action from "../Action.astro";
 
   if ($login) {
     $login.onclick = () => {
-      signIn("twitch");
+      signIn("github");
       $login.setAttribute("aria-disabled", "true");
 
       const $span = $login.querySelector("span");
