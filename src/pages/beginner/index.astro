@@ -1,0 +1,12 @@
+---
+import { getCollection } from "astro:content";
+import ArticleList from "@/layouts/ArticleList.astro";
+import BeginnerArticles from "@/components/BeginnerArticles.astro";
+const posts = (await getCollection("beginner")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<ArticleList>
+  {posts.map((post) => <BeginnerArticles {...post.data} slug={post.slug} />)}
+</ArticleList>

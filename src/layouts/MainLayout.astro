@@ -14,7 +14,11 @@ const { title } = Astro.props;
     class="dark:bg-[#0F172A] bg-white selection:bg-green-200 selection:text-black dark:selection:bg-green-200 dark:selection:text-black transition-colors duration-200 ease-in-out"
   >
     <div>
-      <main>
+      <main class="relative">
+        <div
+          class="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-[#0f172a] bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]"
+        >
+        </div>
         <slot />
       </main>
       <Footer />

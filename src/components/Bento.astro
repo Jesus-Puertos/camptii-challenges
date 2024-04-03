@@ -1,6 +1,12 @@
 ---
 import BentoItem from "./BentoItem.astro";
 import BoxArrowIcon from "@/icons/BoxArrow.astro";
+import { Image } from "astro:assets";
+import CatIlustration from "@/assets/5.png";
+import TeamIlustration from "@/assets/6.png";
+import IntermadeIlustration from "@/assets/21.png";
+import HardIlustration from "@/assets/7.png";
+import StacksIlustration from "@/assets/11.png";
 ---
 
 <h2
@@ -21,9 +27,17 @@ import BoxArrowIcon from "@/icons/BoxArrow.astro";
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
     -z-10 h-full w-full bg-black-950
-    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    bg-cover bg-center bg-no-repeat blur-2xl opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/blog-placeholder-1.jpg')"
     >
+    </div>
+
+    <div slot="ilustration">
+      <Image
+        class="absolute size-5/6 -bottom-4 -right-4 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={CatIlustration}
+        alt="Ilustración de un reto de programación"
+      />
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
@@ -35,8 +49,8 @@ import BoxArrowIcon from "@/icons/BoxArrow.astro";
         class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
       >
         <a
-          href=""
-          target="_blank"
+          href="/beginner"
+          target="_parent"
           rel="noopener noreferrer"
           class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
         >
@@ -55,6 +69,14 @@ import BoxArrowIcon from "@/icons/BoxArrow.astro";
 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/blog-placeholder-2.jpg')"
     >
+    </div>
+
+    <div slot="ilustration">
+      <Image
+        class="absolute size-6/5 md:size-5/6 -bottom-4 -right-32 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={IntermadeIlustration}
+        alt="Ilustración de un reto de programación"
+      />
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
@@ -83,9 +105,17 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
 -z-10 h-full w-full bg-black-950
-bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+bg-cover bg-center bg-no-repeat blur-2xl opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/blog-placeholder-1.jpg')"
     >
+    </div>
+
+    <div slot="ilustration">
+      <Image
+        class="absolute size-6/5 md:size-5/6 -bottom-4 -right-24 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={HardIlustration}
+        alt="Ilustración de un reto de programación"
+      />
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
@@ -117,6 +147,14 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/blog-placeholder-2.jpg')"
     >
+    </div>
+
+    <div slot="ilustration">
+      <Image
+        class="absolute size-5/6 -bottom-4 -right-4 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={TeamIlustration}
+        alt="Ilustración de un reto de programación"
+      />
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
@@ -152,6 +190,14 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/blog-placeholder-2.jpg')"
     >
+    </div>
+
+    <div slot="ilustration">
+      <Image
+        class="absolute size-96 -bottom-4 -right-4 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={StacksIlustration}
+        alt="Ilustración de un reto de programación"
+      />
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
