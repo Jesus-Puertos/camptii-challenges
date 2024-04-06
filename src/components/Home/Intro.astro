@@ -60,7 +60,7 @@ import Action from "../Action.astro";
 
   if ($login) {
     $login.onclick = () => {
-      signIn("github");
+      signIn("twitch");
       $login.setAttribute("aria-disabled", "true");
 
       const $span = $login.querySelector("span");
