@@ -1,0 +1,26 @@
+---
+import { getSession } from "auth-astro/server";
+import Action from "../Action.astro";
+
+const session = await getSession(Astro.request);
+---
+
+<section class="flex flex-col justify-center items-center mt-6">
+  <h1>¡Te damos la bienvenida!</h1>
+  <p>Has iniciado sesión como {session?.user?.name}</p>
+  <p>
+    Ahora tienes la posibilidad de votar por los proyectos que más te gusten.
+  </p>
+  <Action id="logout" class="text-base" as="button" aria-label="Cerrar Sesion">
+    Cerrar Sesión
+  </Action>
+</section>
+
+<script>
+  import { $ } from "@/lib/dom-selector";
+
+  const { signOut } = await import("auth-astro/client");
+  const $logout = $("#logout");
+
+  if ($logout) $logout.onclick = () => signOut();
+</script>

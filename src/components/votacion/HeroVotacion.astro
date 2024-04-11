@@ -1,0 +1,65 @@
+---
+import Action from "@/components/Action.astro";
+---
+
+<section class="py-4 max-w-3xl mx-auto px-6 sm:px-8">
+  <header class="my-12 block">
+    <h1
+      class="font-bold text-[#3E3355] dark:text-white text-text-heading text-center text-4xl md:text-5xl pt-4 pb-4 overflow-hidden"
+    >
+      <span
+        class="bg-gradient-to-bl bg-no-repeat bg-bottom bg-[length:90%_40%]
+  from-[#8AE6FB] to-[#8AE6FB] dark:from-[#8AE6FB]/20 dark:to-blue-600/70
+  [text-wrap:balance]"
+      >
+        <span class="dark:text-yellow-200">Participa y Vota</span>
+        <br />
+        Camptii V5.0</span
+      >
+    </h1>
+
+    <p
+      class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed mt-6"
+    >
+      <strong>Apoya</strong> a los proyectos que más te gusten.
+    </p>
+    <p
+      class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed"
+    >
+      Participa y vota por los proyectos de nuestra comunidad estudiantil.
+
+      <span class="text-[#3e3355] dark:text-yellow-200 font-bold"
+        >¡Deseamos éxito a todos los participantes!</span
+      >
+    </p>
+    <Action
+      id="login"
+      class="w-full text-base"
+      as="button"
+      aria-label="Iniciar Sesion"
+    >
+      Inicia sesión para votar
+    </Action>
+    <small class="mt-2">Para participar, necesitas una cuenta de GitHub</small>
+  </header>
+</section>
+
+<script>
+  import { $ } from "@/lib/dom-selector";
+
+  const { signIn } = await import("auth-astro/client");
+  const $login = $("#login");
+
+  if ($login) {
+    $login.onclick = () => {
+      signIn("twitch");
+      $login.setAttribute("aria-disabled", "true");
+
+      const $span = $login.querySelector("span");
+      if ($span) $span.innerText = "Iniciando sesión...";
+    };
+  }
+
+  const fecha = new Date();
+  console.log(fecha);
+</script>
