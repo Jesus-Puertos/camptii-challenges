@@ -18,29 +18,60 @@ import Action from "@/components/Action.astro";
       >
     </h1>
 
-    <p
-      class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed mt-6"
-    >
-      <strong>Apoya</strong> a los proyectos que más te gusten.
-    </p>
-    <p
-      class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed"
-    >
-      Participa y vota por los proyectos de nuestra comunidad estudiantil.
+    <div class="flex gap-x-6 mt-2">
+      <div>
+        <p
+          class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed mt-6"
+        >
+          <strong>Apoya</strong> a los proyectos que más te gusten.
+        </p>
+        <p
+          class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed"
+        >
+          Participa y vota por los proyectos de nuestra comunidad estudiantil.
 
-      <span class="text-[#3e3355] dark:text-yellow-200 font-bold"
-        >¡Deseamos éxito a todos los participantes!</span
-      >
-    </p>
-    <Action
-      id="login"
-      class="w-full text-base"
-      as="button"
-      aria-label="Iniciar Sesion"
-    >
-      Inicia sesión para votar
-    </Action>
-    <small class="mt-2">Para participar, necesitas una cuenta de GitHub</small>
+          <span class="text-[#3e3355] dark:text-yellow-200 font-bold"
+            >¡Deseamos éxito a todos los participantes!</span
+          >
+        </p>
+        <Action
+          id="login"
+          class="w-full text-base"
+          as="button"
+          aria-label="Iniciar Sesion"
+        >
+          Inicia sesión para votar
+        </Action>
+        <small class="mt-2"
+          >Para participar, necesitas una cuenta de GitHub</small
+        >
+      </div>
+
+      <div>
+        <p
+          class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed mt-6"
+        >
+          Registra tu proyecto y participa en la votación de los proyectos
+          presentados por la comunidad estudiantil.
+        </p>
+        <p
+          class="text-slate-800 dark:text-slate-300 text-xl text-pretty leading-relaxed"
+        >
+          <strong>¡Demuestra tu talento!</strong>
+        </p>
+
+        <Action
+          href="/registro"
+          target="_parent"
+          rel="noopener"
+          class="w-full text-base text-center mt-8"
+          as="a"
+          aria-label="Ver Proyectos"
+        >
+          Registrar proyecto
+        </Action>
+      </div>
+    </div>
   </header>
 </section>
 

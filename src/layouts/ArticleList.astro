@@ -3,6 +3,7 @@ import MainLayout from "./MainLayout.astro";
 import TagSelector from "@/components/TagSelector.astro";
 import Article from "@/components/Article.astro";
 import ThemeToggle from "@/components/ThemeToggle.astro";
+import HomeIcon from "@/icons/HomeIcon.astro";
 ---
 
 <MainLayout title="Pruebas">
@@ -12,7 +13,9 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
       <a
         href="/"
         target="_top"
-        class="text-xl text-slate-800 dark:text-yellow-400">Inicio</a
+        class="text-xl text-slate-800 dark:text-yellow-400"
+        ><HomeIcon class="text-white size-7" />
+        <span class="hidden">Inicio</span></a
       >
       <ThemeToggle />
     </header>

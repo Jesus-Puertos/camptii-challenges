@@ -1,0 +1,108 @@
+[
+    {
+      "categoryName": "Langind Page",
+      "candidates": [
+        {
+            "name": "Chatbot",
+            "image": "https://imgs.search.brave.com/7xYLK094wKpXXsDT251QidnneBzH63qtEfNssuCZsjg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8zMjB2/b2x0LmNvbS9lbi93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxMy8w/OC9ncmFmaWstbGNk/LXByb2plbGVyaW5p/ei1pY2luLWltYWdl/LWxjZC1wcm9ncmFt/aS5wbmc",
+            "link": "https://www.google.com",
+            "id": "1-1"
+        },
+         {
+        "name": "Herping Zoongolica",
+        "image": "https://herping-zoongolica-landing.vercel.app/_astro/MockupPhones.DqPCfnLC_2cld8g.webp",
+        "link": "https://herping-zoongolica-landing.vercel.app/",
+        "id": "1-2"
+    },
+    {
+        "name": "Herping Zoongolica",
+        "image": "https://herping-zoongolica-landing.vercel.app/_astro/MockupPhones.DqPCfnLC_2cld8g.webp",
+        "link": "https://herping-zoongolica-landing.vercel.app/",
+        "id": "1-3"
+    },
+    {
+        "name": "Herping Zoongolica",
+        "image": "https://herping-zoongolica-landing.vercel.app/_astro/MockupPhones.DqPCfnLC_2cld8g.webp",
+        "link": "https://herping-zoongolica-landing.vercel.app/",
+        "id": "1-4"
+    },
+    {
+        "name": "Herping Zoongolica",
+        "image": "https://herping-zoongolica-landing.vercel.app/_astro/MockupPhones.DqPCfnLC_2cld8g.webp",
+        "link": "https://herping-zoongolica-landing.vercel.app/",
+        "id": "1-5"
+    },
+    {
+        "name": "Herping Zoongolica",
+        "image": "https://herping-zoongolica-landing.vercel.app/_astro/MockupPhones.DqPCfnLC_2cld8g.webp",
+        "link": "https://herping-zoongolica-landing.vercel.app/",
+        "id": "1-6"
+    },
+    {
+        "name": "Herping Zoongolica",
+        "image": "https://herping-zoongolica-landing.vercel.app/_astro/MockupPhones.DqPCfnLC_2cld8g.webp",
+        "link": "https://herping-zoongolica-landing.vercel.app/",
+        "id": "1-7"
+    },
+    {
+        "name": "Herping Zoongolica",
+        "image": "https://herping-zoongolica-landing.vercel.app/_astro/MockupPhones.DqPCfnLC_2cld8g.webp",
+        "link": "https://herping-zoongolica-landing.vercel.app/",
+        "id": "1-8"
+    }
+      ]
+    },
+    {
+      "categoryName": "E-commerce",
+      "candidates": [
+        {
+            "name": "E-commerce",
+            "image": "https://imgs.search.brave.com/7xYLK094wKpXXsDT251QidnneBzH63qtEfNssuCZsjg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8zMjB2/b2x0LmNvbS9lbi93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxMy8w/OC9ncmFmaWstbGNk/LXByb2plbGVyaW5p/ei1pY2luLWltYWdl/LWxjZC1wcm9ncmFt/aS5wbmc",
+            "link": "https://www.google.com",
+            "id": "2-1"
+        }
+      ]
+    },{
+      "categoryName": "Blog",
+      "candidates": [
+        {
+            "name": "Blog",
+            "image": "https://imgs.search.brave.com/7xYLK094wKpXXsDT251QidnneBzH63qtEfNssuCZsjg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8zMjB2/b2x0LmNvbS9lbi93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxMy8w/OC9ncmFmaWstbGNk/LXByb2plbGVyaW5p/ei1pY2luLWltYWdl/LWxjZC1wcm9ncmFt/aS5wbmc",
+            "link": "https://www.google.com",
+            "id": "3-1"
+        }
+      ]
+    },{
+      "categoryName": "Portfolio",
+      "candidates": [
+        {
+            "name": "Portfolio",
+            "image": "https://imgs.search.brave.com/7xYLK094wKpXXsDT251QidnneBzH63qtEfNssuCZsjg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8zMjB2/b2x0LmNvbS9lbi93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxMy8w/OC9ncmFmaWstbGNk/LXByb2plbGVyaW5p/ei1pY2luLWltYWdl/LWxjZC1wcm9ncmFt/aS5wbmc",
+            "link": "https://www.google.com",
+            "id": "4-1"
+        }
+      ]
+    },{
+      "categoryName": "Social Media",
+      "candidates": [
+        {
+            "name": "Social Media",
+            "image": "https://imgs.search.brave.com/7xYLK094wKpXXsDT251QidnneBzH63qtEfNssuCZsjg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8zMjB2/b2x0LmNvbS9lbi93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxMy8w/OC9ncmFmaWstbGNk/LXByb2plbGVyaW5p/ei1pY2luLWltYWdl/LWxjZC1wcm9ncmFt/aS5wbmc",
+            "link": "https://www.google.com",
+            "id": "5-1"
+        }
+      ]
+    },{
+      "categoryName": "Forum",
+      "candidates": [
+        {
+            "name": "Forum",
+            "image": "https://imgs.search.brave.com/7xYLK094wKpXXsDT251QidnneBzH63qtEfNssuCZsjg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8zMjB2/b2x0LmNvbS9lbi93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxMy8w/OC9ncmFmaWstbGNk/LXByb2plbGVyaW5p/ei1pY2luLWltYWdl/LWxjZC1wcm9ncmFt/aS5wbmc",
+            "link": "https://www.google.com",
+            "id": "6-1"
+
+
+    }
+  ]
+}
+]

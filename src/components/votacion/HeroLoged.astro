@@ -1,6 +1,7 @@
 ---
 import { getSession } from "auth-astro/server";
 import Action from "../Action.astro";
+import VoteSystem from "../VoteSystem.tsx";
 
 const session = await getSession(Astro.request);
 ---
@@ -11,6 +12,9 @@ const session = await getSession(Astro.request);
   <p>
     Ahora tienes la posibilidad de votar por los proyectos que más te gusten.
   </p>
+
+  <VoteSystem client:load />
+
   <Action id="logout" class="text-base" as="button" aria-label="Cerrar Sesion">
     Cerrar Sesión
   </Action>
